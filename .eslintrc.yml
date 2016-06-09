@@ -1,0 +1,68 @@
+
+root: true
+extends:
+  - eslint:recommended
+  - strict/es5
+  - google
+
+parserOptions:
+  sourceType:  module
+  impliedStrict: true
+
+plugins:
+  - if-in-test
+  - xo
+  - promise
+  - node
+  - import
+
+
+env:
+  node: true
+
+rules:
+  eqeqeq: [error, smart]
+  no-extra-parens: error
+  max-len: [error, 128]
+  # too strict for us now, will enable some day
+  func-names: off
+  id-match: off
+  id-blacklist: off
+  newline-after-var: off
+  no-inline-comments: off
+  consistent-this: off
+  no-invalid-this: off
+  no-process-exit: off
+  no-underscore-dangle: off
+  id-length: off
+  no-sync: error
+  no-shadow: error
+  global-require: error
+  init-declarations: error
+  consistent-return: error
+  no-warning-comments: error
+  camelcase: [error , { properties:  never }]
+  # no strict more
+  strict: [error, never]
+  quote-props: [error, consistent-as-needed]
+  guard-for-in: error
+
+  require-jsdoc: off
+  valid-jsdoc: error
+
+  no-magic-numbers: [error, { ignore: [-1, 0, 1, 2] }]
+
+  xo/filename-case: [error, {case: kebabCase}]
+
+  promise/param-names: error
+  promise/catch-or-return: error
+
+  node/no-unsupported-features: [error, {version: 5, ignores: [blockScopedFunctions]}]
+  node/no-deprecated-api: warn
+
+  import/no-duplicates: error
+  import/extensions: [error , { js: never, json: always }]
+  import/no-extraneous-dependencies: error
+  import/prefer-default-export: error
+  import/newline-after-import: warn
+  import/no-mutable-exports: error
