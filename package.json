@@ -12,7 +12,7 @@
     "eslint": "2.12.0",
     "eslint-config-google": "0.5.0",
     "eslint-config-strict": "9.0.0",
-    "eslint-plugin-angular": "1.0.1",
+    "eslint-plugin-angular": "1.1.0",
     "eslint-plugin-filenames": "1.0.0",
     "eslint-plugin-if-in-test": "0.2.0",
     "eslint-plugin-import": "1.8.1",
