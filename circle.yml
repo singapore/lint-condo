@@ -1,0 +1,11 @@
+machine:
+  services:
+    - docker
+
+dependencies:
+  override:
+    - echo true
+
+test:
+  override:
+    - npm test
