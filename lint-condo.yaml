@@ -3,3 +3,4 @@ linters:
   - yamllint -c yamllint.yml *.yml *.yaml
   - eslint --ignore-path .gitignore .
   - jscs .
+  - markdownlint *.md
