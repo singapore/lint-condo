@@ -5,7 +5,7 @@
   "description": "Lint Container for Docker",
   "repository": "https://github.com/singapore/lint-condo",
   "dependencies": {
-    "eslint": "2.11.1",
+    "eslint": "2.12.0",
     "eslint-config-google": "0.5.0",
     "eslint-config-strict": "9.0.0",
     "eslint-plugin-angular": "1.0.1",
@@ -19,7 +19,7 @@
     "js-yaml": "3.6.1",
     "jscs": "3.0.4",
     "pug-lint": "2.2.2",
-    "remark": "4.2.2",
+    "remark": "5.0.1",
     "remark-lint": "4.0.0"
   }
 }
