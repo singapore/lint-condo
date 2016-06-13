@@ -4,7 +4,7 @@ machine:
 
 dependencies:
   override:
-    - echo true
+    - make build
 
 test:
   override:
