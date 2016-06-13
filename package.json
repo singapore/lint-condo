@@ -28,7 +28,7 @@
     "pug-lint": "2.2.2",
     "remark": "5.0.1",
     "remark-cli": "1.0.0",
-    "remark-lint": "4.0.0",
+    "remark-lint": "4.0.1",
     "sass-lint": "1.7.0",
     "stylelint": "6.5.1",
     "tern-lint": "0.6.0",
