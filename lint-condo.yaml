@@ -3,6 +3,7 @@ linters:
   - jscs .
   - jshint . --verbose
   - markdownlint *.md
+  - proselint *.md
   - remark *.md --quiet --frail --no-stdout
   - yamllint -c yamllint.yml *.yml *.yaml
   - write-good *.md

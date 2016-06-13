@@ -7,7 +7,7 @@ RUN apk add --no-cache \
     py-pip
 
 RUN gem install scss_lint -v 0.48.0 && gem sources -c
-RUN pip --no-cache-dir install yamllint==1.2.1
+RUN pip --no-cache-dir install yamllint==1.2.1 proselint==0.5.3
 
 COPY package.json /
 RUN cd / && npm -q install && npm cache clean
