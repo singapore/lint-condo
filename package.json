@@ -21,8 +21,5 @@
     "remark": "5.0.1",
     "remark-cli": "1.0.0",
     "remark-lint": "4.0.0"
-  },
-  "scripts": {
-    "test": "docker run -v `pwd`:/src/ singapore/lint-condo:0.3.0"
   }
 }
