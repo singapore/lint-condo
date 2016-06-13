@@ -1,7 +1,7 @@
 linters:
+  - eslint --ignore-path .gitignore .
+  - jscs .
+  - jshint . --verbose
+  - markdownlint *.md
   - remark *.md --quiet --frail --no-stdout
   - yamllint -c yamllint.yml *.yml *.yaml
-  - eslint --ignore-path .gitignore .
-  - jshint . --verbose
-  - jscs .
-  - markdownlint *.md
