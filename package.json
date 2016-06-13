@@ -20,6 +20,7 @@
     "jscs": "3.0.4",
     "pug-lint": "2.2.2",
     "remark": "5.0.1",
+    "remark-cli": "1.0.0",
     "remark-lint": "4.0.0"
   }
 }
