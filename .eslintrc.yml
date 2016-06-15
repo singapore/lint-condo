@@ -1,12 +1,12 @@
-
 root: true
+
 extends:
   - eslint:recommended
   - strict/es5
   - google
 
 parserOptions:
-  sourceType:  module
+  sourceType: module
   impliedStrict: true
 
 plugins:
@@ -15,7 +15,6 @@ plugins:
   - promise
   - node
   - import
-
 
 env:
   node: true
@@ -41,7 +40,7 @@ rules:
   init-declarations: error
   consistent-return: error
   no-warning-comments: error
-  camelcase: [error , { properties:  never }]
+  camelcase: [error, { properties: never }]
   # no strict more
   strict: [error, never]
   quote-props: [error, consistent-as-needed]
@@ -61,7 +60,7 @@ rules:
   node/no-deprecated-api: warn
 
   import/no-duplicates: error
-  import/extensions: [error , { js: never, json: always }]
+  import/extensions: [error, { js: never, json: always }]
   import/no-extraneous-dependencies: error
   import/prefer-default-export: error
   import/newline-after-import: warn
