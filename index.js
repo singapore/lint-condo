@@ -5,7 +5,18 @@ var fs = require('fs');
 var spawn = require('child_process').spawn;
 var yaml = require('js-yaml');
 
-var config = yaml.load(fs.readFileSync('lint-condo.yaml', 'utf-8'));
+var configFile = null;
+try {
+  configFile = fs.readFileSync('lint-condo.yaml', 'utf-8');
+} catch (err1) {
+  try {
+    configFile = fs.readFileSync('.lint-condo.yaml', 'utf-8');
+  } catch (err2) {
+    console.error('ERROR: Couldn\'t find a config file');
+    process.exit(1);
+  }
+}
+var config = yaml.load(configFile);
 
 var queue = Promise.resolve();
 var statuses = {};
