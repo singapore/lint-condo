@@ -10,7 +10,7 @@
     "dependency-lint": "4.0.1",
     "doiuse": "2.3.0",
     "eslint": "2.12.0",
-    "eslint-config-google": "0.5.0",
+    "eslint-config-google": "0.6.0",
     "eslint-config-strict": "9.0.0",
     "eslint-config-xo-react": "0.7.0",
     "eslint-plugin-angular": "1.1.1",
