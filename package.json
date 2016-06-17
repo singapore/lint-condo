@@ -38,7 +38,7 @@
     "xo": "0.16.0"
   },
   "devDependencies": {
-    "glob": "7.0.3",
+    "glob": "7.0.4",
     "js-yaml": "3.6.1",
     "log-symbols": "1.0.2"
   }
