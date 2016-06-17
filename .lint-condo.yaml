@@ -5,5 +5,5 @@ linters:
   - markdownlint *.md
   - proselint *.md
   - remark *.md --quiet --frail --no-stdout
-  - yamllint -c yamllint.yml *.yml *.yaml
+  - yamllint -c yamllint.yml .
   - write-good *.md
