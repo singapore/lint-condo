@@ -9,7 +9,7 @@
     "csslint": "0.10.0",
     "dependency-lint": "4.0.1",
     "doiuse": "2.3.0",
-    "eslint": "2.13.0",
+    "eslint": "2.13.1",
     "eslint-config-google": "0.6.0",
     "eslint-config-strict": "9.0.0",
     "eslint-config-xo-react": "0.8.0",
