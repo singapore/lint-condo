@@ -2,6 +2,7 @@
 /* eslint-disable no-console */
 
 var fs = require('fs');
+var pty = require('pty.js');
 var spawn = require('child_process').spawn;
 var yaml = require('js-yaml');
 var logSymbols = require('log-symbols');
@@ -64,9 +65,8 @@ queue
 function run(command) {
   return new Promise(function(resolve) {
     console.log('\nRunning "%s"', command);
-    var child = spawn('/bin/sh', ['-c', command], {
-      stdio: ['ignore', 1, 2]
-    });
+    var child = pty.spawn('/bin/sh', ['-c', command]);
+    child.pipe(process.stdout);
     child.on('error', function(err) {
       console.error(err);
       resolve(255); // eslint-disable-line no-magic-numbers
