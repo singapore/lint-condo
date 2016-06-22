@@ -2,10 +2,10 @@
 /* eslint-disable no-console */
 
 var fs = require('fs');
-var pty = require('pty.js');
 var yaml = require('js-yaml');
 var logSymbols = require('log-symbols');
 var lintDependencies = require('/usr/src/lint-condo/package.json').dependencies;
+var spawn = require('child_pty').spawn;
 
 var lintPackages = Object.keys(lintDependencies);
 lintPackages.push('markdownlint'); // npm markdownlint-cli
@@ -64,8 +64,8 @@ queue
 function run(command) {
   return new Promise(function(resolve) {
     console.log('\nRunning "%s"', command);
-    var child = pty.spawn('/bin/sh', ['-c', command]);
-    child.pipe(process.stdout);
+    var child = spawn('/bin/sh', ['-c', command]);
+    child.stdout.pipe(process.stdout);
     child.on('error', function(err) {
       console.error(err);
       resolve(255); // eslint-disable-line no-magic-numbers
