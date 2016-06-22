@@ -3,7 +3,6 @@
 
 var fs = require('fs');
 var pty = require('pty.js');
-var spawn = require('child_process').spawn;
 var yaml = require('js-yaml');
 var logSymbols = require('log-symbols');
 var lintDependencies = require('/usr/src/lint-condo/package.json').dependencies;
