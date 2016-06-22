@@ -5,3 +5,5 @@ build:
 
 test:
 	@docker run -v ${PWD}:/src/ singapore/lint-condo
+
+.PHONY: run build test
