@@ -12,6 +12,7 @@ apk add --no-cache \
     python \
     python-dev \
     py-pip \
+    git
 
 # ---------------
 # install linters
@@ -35,7 +36,7 @@ gem sources -c
 #rm -Rf /usr/lib/go
 
 npm cache clean
-apk del python-dev
+apk del python-dev git
 
 # -------------
 # create target
