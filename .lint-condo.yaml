@@ -8,3 +8,4 @@ linters:
   - yamllint -c yamllint.yml .
   - write-good *.md
   - gometalinter --help
+  - sh test/colors.sh
