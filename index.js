@@ -1,26 +1,44 @@
 /* eslint-disable no-sync */
-/* eslint-disable no-console */
 
 var fs = require('fs');
-var spawn = require('child_process').spawn;
+var chalk = require('chalk');
 var yaml = require('js-yaml');
 var logSymbols = require('log-symbols');
-var lintDependencies = require('/usr/src/lint-condo/package.json').dependencies;
+var spawn = require('child_process').spawn;
+var pkg = require('./package.json');
 
-var lintPackages = Object.keys(lintDependencies);
-lintPackages.push('markdownlint'); // npm markdownlint-cli
-lintPackages.push('yamllint'); // pip
-lintPackages.push('proselint'); // pip
-lintPackages.push('scss-lint'); // gem
+var lintPackages = Object.keys(pkg.dependencies).concat(
+  'markdownlint', // npm markdownlint-cli
+  'yamllint', // pip
+  'proselint', // pip
+  'scss-lint' // gem
+);
+
+/* eslint-disable no-console */
+var logger = {
+  error: function(msg) {
+    console.error(chalk.bgReg(msg));
+  },
+  info: function(msg) {
+    console.log(chalk.blue(msg));
+  },
+  pass: function(msg) {
+    console.log(logSymbols.success, chalk.green(msg));
+  },
+  fail: function(msg) {
+    console.log(logSymbols.error, chalk.red(msg));
+  }
+};
+/* eslint-enable no-console */
+
 var configFile = null;
-
 try {
   configFile = fs.readFileSync('lint-condo.yaml', 'utf-8');
 } catch (err1) {
   try {
     configFile = fs.readFileSync('.lint-condo.yaml', 'utf-8');
   } catch (err2) {
-    console.error('ERROR: Couldn\'t find a config file');
+    logger.error('ERROR: Couldn\'t find a config file');
     process.exit(1);
   }
 }
@@ -41,7 +59,7 @@ config.linters.forEach(function(linter) {
 
 queue
   .then(function() {
-    console.log('\nSummary:');
+    logger.info('\nSummary:');
     Object.keys(statuses).forEach(function(command) {
       var printedCommand = command;
       var firstWord = command.substr(0, command.indexOf(' '));
@@ -49,30 +67,28 @@ queue
         printedCommand = firstWord;
       }
       if (statuses[command] === 0) {
-        console.log(logSymbols.success, printedCommand);
+        logger.pass(printedCommand);
       } else {
-        console.log(logSymbols.error, printedCommand);
+        logger.fail(printedCommand);
       }
     });
     process.exit(exitCode);
   })
   .catch(function(err) {
-    console.error(err.stack);
+    logger.error(err.stack);
     process.exit(1);
   });
 
 function run(command) {
   return new Promise(function(resolve) {
-    console.log('\nRunning "%s"', command);
-    var child = spawn('/bin/sh', ['-c', command], {
-      stdio: ['ignore', 1, 2]
-    });
+    logger.info(`\nRunning "${command}"`);
+    var child = spawn('/bin/sh', ['-c', command], {stdio: 'inherit'});
     child.on('error', function(err) {
-      console.error(err);
+      logger.error(err);
       resolve(255); // eslint-disable-line no-magic-numbers
     });
     child.on('exit', function(code) {
-      console.log('\nFinished "%s" (code=%d)\n', command, code);
+      logger.info(`\nFinished "${command}" (code=${code})\n`);
       resolve(code);
     });
   });
