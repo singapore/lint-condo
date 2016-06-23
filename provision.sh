@@ -30,13 +30,12 @@ pip --no-cache-dir install yamllint==1.2.1 proselint==0.5.3
 # clean sources
 # -------------
 gem sources -c
-#go clean all
-#rm -Rf /gopath/src
-#rm -Rf /gopath/pkg
-#rm -Rf /usr/lib/go
+rm -Rf /gopath/src
+rm -Rf /gopath/pkg
+rm -Rf /usr/lib/go
 
 npm cache clean
-apk del python-dev git
+apk del python-dev git go
 
 # -------------
 # create target
