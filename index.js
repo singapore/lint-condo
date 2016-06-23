@@ -16,17 +16,17 @@ var lintPackages = Object.keys(pkg.dependencies).concat(
 
 /* eslint-disable no-console */
 var logger = {
-  error: function() {
-    console.error(chalk.bgReg.apply(null, arguments));
+  error: function(msg) {
+    console.error(chalk.bgReg(msg));
   },
-  info: function() {
-    console.log(chalk.blue.apply(null, arguments));
+  info: function(msg) {
+    console.log(chalk.blue(msg));
   },
-  pass: function() {
-    console.log(logSymbols.success, chalk.green.apply(null, arguments));
+  pass: function(msg) {
+    console.log(logSymbols.success, chalk.green(msg));
   },
-  fail: function() {
-    console.log(logSymbols.error, chalk.red.apply(null, arguments));
+  fail: function(msg) {
+    console.log(logSymbols.error, chalk.red(msg));
   }
 };
 /* eslint-enable no-console */
@@ -81,14 +81,14 @@ queue
 
 function run(command) {
   return new Promise(function(resolve) {
-    logger.info('\nRunning "%s"', command);
+    logger.info(`\nRunning "${command}"`);
     var child = spawn('/bin/sh', ['-c', command], {stdio: 'inherit'});
     child.on('error', function(err) {
       logger.error(err);
       resolve(255); // eslint-disable-line no-magic-numbers
     });
     child.on('exit', function(code) {
-      logger.info('\nFinished "%s" (code=%d)\n', command, code);
+      logger.info(`\nFinished "${command}" (code=${code})\n`);
       resolve(code);
     });
   });
