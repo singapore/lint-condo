@@ -7,7 +7,9 @@ RUN sh provision.sh
 
 COPY . /usr/src/lint-condo
 
-ENV PATH /node_modules/.bin:$PATH
+ENV GOPATH /gopath
+ENV GOBIN /gopath/bin
+ENV PATH /node_modules/.bin:$GOPATH/bin:$PATH
 
 WORKDIR /src
 
