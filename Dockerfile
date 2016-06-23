@@ -3,13 +3,12 @@ FROM ruby:alpine
 COPY provision.sh /
 COPY package.json /
 
+ENV GOPATH /gopath
+ENV PATH /node_modules/.bin:$GOPATH/bin:$PATH
+
 RUN sh provision.sh
 
 COPY . /usr/src/lint-condo
-
-ENV GOPATH /gopath
-ENV GOBIN /gopath/bin
-ENV PATH /node_modules/.bin:$GOPATH/bin:$PATH
 
 WORKDIR /src
 
