@@ -20,7 +20,7 @@ apk add --no-cache \
 # ---------------
 # install linters
 # ---------------
-gem install scss_lint -v 0.48.0
+gem install scss_lint -v 0.48.0 -N
 
 go get -u github.com/alecthomas/gometalinter
 gometalinter --install --update
