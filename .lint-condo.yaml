@@ -7,4 +7,3 @@ linters:
   - remark *.md --quiet --frail --no-stdout
   - yamllint -c yamllint.yml .
   - write-good *.md
-  - sh test/colors.sh
