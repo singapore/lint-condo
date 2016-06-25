@@ -6,7 +6,7 @@ COPY package.json /
 ENV GOPATH /gopath
 ENV PATH /node_modules/.bin:$GOPATH/bin:$PATH
 
-RUN sh provision.sh
+RUN apk add --no-cache bash && bash provision.sh
 
 COPY . /usr/src/lint-condo
 
