@@ -13,7 +13,8 @@ apk add --no-cache \
     python \
     python-dev \
     py-pip \
-    ruby
+    ruby \
+    ruby-bundler
 
 # ---------------
 # install linters
