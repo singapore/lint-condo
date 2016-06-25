@@ -1,5 +1,9 @@
 FROM ruby:alpine
 
+RUN echo "http://dl-cdn.alpinelinux.org/alpine/v3.3/main" >> /etc/apk/repositories
+RUN echo "http://dl-cdn.alpinelinux.org/alpine/v3.3/community" >> /etc/apk/repositories
+RUN apk update
+
 RUN apk add --no-cache \
     nodejs=4.3.0-r0 \
     python \
