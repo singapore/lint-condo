@@ -1,4 +1,4 @@
-FROM ruby:alpine
+FROM alpine:3.3
 
 COPY provision.sh /
 COPY package.json /

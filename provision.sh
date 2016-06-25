@@ -5,17 +5,15 @@ cd /
 # install languages
 # -----------------
 
-echo "http://dl-cdn.alpinelinux.org/alpine/v3.3/main" >> /etc/apk/repositories
-echo "http://dl-cdn.alpinelinux.org/alpine/v3.3/community" >> /etc/apk/repositories
-
 apk update
 apk add --no-cache \
+    git \
     go \
     nodejs=4.3.0-r0 \
     python \
     python-dev \
     py-pip \
-    git
+    ruby
 
 # ---------------
 # install linters
