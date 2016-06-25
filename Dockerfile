@@ -1,7 +1,7 @@
 FROM ruby:alpine
 
 RUN apk add --no-cache \
-    nodejs \
+    nodejs=4.3.0-r0 \
     python \
     python-dev \
     py-pip
