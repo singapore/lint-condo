@@ -1,6 +1,7 @@
 FROM alpine:3.3
 
 COPY provision.sh /
+COPY requirements.txt /
 COPY package.json /
 
 ENV GOPATH /gopath
