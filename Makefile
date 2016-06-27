@@ -1,9 +1,7 @@
-run: build test
 
-build:
-	@docker build -t singapore/lint-condo .
+.PHONY: prepare
 
-test:
-	@docker run -v ${PWD}:/src/ -e "FORCE_COLOR=true" singapore/lint-condo
-
-.PHONY: run build test
+prepare:
+	apt-get install python3-pip
+	pip3 install --upgrade doit
+	doit tabcompletion > /etc/bash_completion.d/doit

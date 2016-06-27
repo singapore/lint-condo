@@ -8,8 +8,8 @@ ENV PATH /node_modules/.bin:$GOPATH/bin:$PATH
 
 RUN apk add --no-cache bash && bash provision.sh
 
-COPY . /usr/src/lint-condo
+COPY src /usr/src/lint-condo
 
 WORKDIR /src
 
-ENTRYPOINT ["node", "/usr/src/lint-condo"]
+CMD ["node", "/usr/src/lint-condo"]

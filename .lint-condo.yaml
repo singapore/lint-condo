@@ -1,10 +1,24 @@
 linters:
+  # JavaScript
   - eslint --ignore-path .gitignore .
   - jscs .
   - jshint . --verbose
+
+  # YAML
+  - yamllint -c yamllint.yml .
+
+  # Markdown
   - markdownlint *.md
   - proselint *.md
   - remark *.md --quiet --frail --no-stdout
-  - yamllint -c yamllint.yml .
   - write-good *.md
+
+  # CSS
+  - scss-lint test/fixture/*.css
+  - sass-lint test/fixture/*.css
+  - csslint test/fixture/*.css
+  - stylelint test/fixture/*.css
+  - doiuse test/fixture/*.css
+
+  # Shell colors
   - sh test/colors.sh
