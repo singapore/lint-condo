@@ -4,8 +4,9 @@ machine:
 
 dependencies:
   override:
+    - make prepare
     - make build
 
 test:
   override:
-    - make test
+    - doit test
