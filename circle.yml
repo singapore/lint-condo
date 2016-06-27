@@ -1,11 +1,14 @@
 machine:
+  python:
+    version: 3.4.3
   services:
     - docker
 
 dependencies:
   override:
-    - make build
+    - pip3 install doit
+    - doit build
 
 test:
   override:
-    - make test
+    - doit test

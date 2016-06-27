@@ -11,10 +11,8 @@ apk add --no-cache \
     git \
     go \
     nodejs=4.3.0-r0 \
-    python \
-    python-dev \
-    py-pip \
-    ruby
+    python python-dev py-pip \
+    ruby ruby-json
 
 # ---------------
 # install linters

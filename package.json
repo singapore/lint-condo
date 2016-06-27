@@ -32,6 +32,7 @@
     "remark-lint": "4.0.1",
     "sass-lint": "1.8.2",
     "stylelint": "6.7.1",
+    "stylelint-config-standard": "9.0.0",
     "tern-lint": "0.6.0",
     "tslint": "3.12.1",
     "typescript": "1.8.10",

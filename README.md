@@ -21,7 +21,6 @@ Node.js-based:
 - dependency-lint
 - doiuse
 - eslint + plugins
-- js-yaml
 - jscs
 - jshint
 - jslint

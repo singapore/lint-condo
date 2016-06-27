@@ -1,0 +1,10 @@
+---
+linters:
+  ColorVariable:
+    enabled: false
+  Comment:
+    enabled: false
+  MergeableSelector:
+    enabled: false
+  PropertySortOrder:
+    enabled: false

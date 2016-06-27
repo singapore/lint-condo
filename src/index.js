@@ -5,7 +5,7 @@ var chalk = require('chalk');
 var yaml = require('js-yaml');
 var logSymbols = require('log-symbols');
 var spawn = require('child_process').spawn;
-var pkg = require('./package.json');
+var pkg = require('/package.json');
 
 var lintPackages = Object.keys(pkg.dependencies).concat(
   'markdownlint', // npm markdownlint-cli

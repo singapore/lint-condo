@@ -1,9 +1,15 @@
-# We use docker
-language: none
+# language setting
+language: python
+
+# version numbers
+python:
+   - "3.3"
+
+install: pip install doit
 
 build:
   pre_ci_boot:
     options: "-v $SHIPPABLE_BUILD_DIR:$SHIPPABLE_BUILD_DIR"
   ci:
-    - make build
-    - make test
+    - doit build
+    - doit test
