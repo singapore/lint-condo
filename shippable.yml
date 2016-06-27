@@ -3,7 +3,7 @@ language: python
 
 # version numbers
 python:
-   - "3.3"
+  - "3.3"
 
 install: pip install doit
 
