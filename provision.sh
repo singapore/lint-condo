@@ -24,7 +24,7 @@ gometalinter --install --update
 
 npm -q install
 
-pip --no-cache-dir install yamllint==1.2.1 proselint==0.5.3
+pip --no-cache-dir install -r requirements.txt
 
 # -------------
 # clean sources
