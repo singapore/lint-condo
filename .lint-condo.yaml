@@ -10,7 +10,7 @@ linters:
   # Markdown
   - proselint *.md
   - remark *.md --quiet --frail --no-stdout
-  - write-good *.md
+  - write-good *.md || true
 
   # CSS
   - scss-lint test/fixture/*.css
