@@ -8,7 +8,6 @@ linters:
   - yamllint -c yamllint.yml .
 
   # Markdown
-  - markdownlint *.md
   - proselint *.md
   - remark *.md --quiet --frail --no-stdout
   - write-good *.md
