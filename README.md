@@ -15,6 +15,7 @@ Linting can be quite contagious once you start, so with this all-in-one image yo
 You will need to run the image while pointing it to your source code and providing a `lint-condo.yml` or `.lint-condo.yml` file to tell it which lint commands to run. You can see an example of this file in this very repository [here](https://github.com/singapore/lint-condo/blob/master/.lint-condo.yaml). As you'll probably observe, it's essentially just a list of shell commands.
 
 You can then run it simply like this:
+
 ```sh
 docker run -v `pwd`:/src/ singapore/lint-condo
 ```
