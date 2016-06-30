@@ -4,9 +4,9 @@ A Lint Container for Docker
 
 ## Introduction
 
-We built this container to provide an easy way to centralise and run linting on any project where you have Docker available. To paraphrase: 
+We built this container to provide an easy way to centralise and run linting on any project where you have Docker available. To paraphrase:
 
-> The best time to start linting your project was when you started it, but the second best time is today. 
+> The best time to start linting your project was when you started it, but the second best time is today.
 
 Linting can be quite contagious once you start, so with this all-in-one image you can easily add many (markdown linting, yaml linting, etc). Our goal is to support as many linters as possible while still keeping a reasonably small Docker image (currently about 104MB according to [Docker Hub](https://hub.docker.com/r/singapore/lint-condo/tags/)).
 
@@ -48,7 +48,7 @@ For our own project linting, we use the `latest` version of the image (so we can
 
 - scss_lint
 - gometalinter
-- proselint 
+- proselint
 - yamllint
 - bootlint
 - coffeelint
