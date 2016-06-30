@@ -54,6 +54,7 @@ For our own project linting, we use the `latest` version of the image (so we can
 - coffeelint
 - csslint
 - dependency-lint
+- dockerfile_lint
 - doiuse
 - eslint + plugins
 - jscs

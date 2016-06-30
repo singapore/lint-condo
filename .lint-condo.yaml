@@ -21,3 +21,6 @@ linters:
 
   # Shell colors
   - sh test/colors.sh
+
+  # Dockerfile
+  - dockerfile_lint -f Dockerfile
