@@ -10,7 +10,7 @@
     "csslint": "0.10.0",
     "dependency-lint": "4.0.2",
     "dockerfile_lint": "0.2.2",
-    "doiuse": "2.4.0",
+    "doiuse": "2.4.1",
     "eslint": "2.13.1",
     "eslint-config-google": "0.6.0",
     "eslint-config-strict": "9.1.0",
