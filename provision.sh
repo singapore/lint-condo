@@ -19,8 +19,8 @@ apk add --no-cache \
 # ---------------
 gem install scss_lint -v 0.48.0 -N
 
-go get -u github.com/alecthomas/gometalinter
-gometalinter --install --update
+go get -u gopkg.in/alecthomas/gometalinter.v1
+ln -s $GOPATH/bin/gometalinter.v1 $GOPATH/bin/gometalinter
 
 npm -q install
 
