@@ -17,7 +17,7 @@ var lintPackages = Object.keys(pkg.dependencies).concat(
 /* eslint-disable no-console */
 var logger = {
   error: function(msg) {
-    console.error(chalk.bgReg(msg));
+    console.error(chalk.bgRed(msg));
   },
   info: function(msg) {
     console.log(chalk.blue(msg));
