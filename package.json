@@ -26,7 +26,7 @@
     "jscs": "3.0.7",
     "jshint": "2.9.2",
     "jslint": "0.10.1",
-    "markdownlint-cli": "0.1.0",
+    "markdownlint-cli": "0.2.0",
     "pug-lint": "2.3.0",
     "remark": "5.0.1",
     "remark-cli": "1.0.0",
