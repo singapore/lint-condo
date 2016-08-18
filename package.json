@@ -30,7 +30,7 @@
     "pug-lint": "2.3.0",
     "remark": "5.0.1",
     "remark-cli": "1.0.0",
-    "remark-lint": "4.0.2",
+    "remark-lint": "4.2.0",
     "sass-lint": "1.8.2",
     "stylelint": "7.0.2",
     "stylelint-config-standard": "11.0.0",
