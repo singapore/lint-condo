@@ -28,7 +28,7 @@
     "jslint": "0.10.1",
     "markdownlint-cli": "0.1.0",
     "pug-lint": "2.3.0",
-    "remark": "5.0.1",
+    "remark": "5.1.0",
     "remark-cli": "1.0.0",
     "remark-lint": "4.0.2",
     "sass-lint": "1.8.2",
