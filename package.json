@@ -21,7 +21,7 @@
     "eslint-plugin-import": "1.14.0",
     "eslint-plugin-node": "2.0.0",
     "eslint-plugin-promise": "2.0.1",
-    "eslint-plugin-react": "6.1.2",
+    "eslint-plugin-react": "6.2.1",
     "eslint-plugin-xo": "0.5.1",
     "jscs": "3.0.7",
     "jshint": "2.9.3",
