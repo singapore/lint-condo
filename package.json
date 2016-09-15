@@ -21,7 +21,7 @@
     "eslint-plugin-import": "1.14.0",
     "eslint-plugin-node": "2.0.0",
     "eslint-plugin-promise": "2.0.1",
-    "eslint-plugin-react": "6.1.2",
+    "eslint-plugin-react": "6.2.2",
     "eslint-plugin-xo": "0.5.1",
     "jscs": "3.0.7",
     "jshint": "2.9.3",
@@ -32,7 +32,7 @@
     "remark-cli": "2.0.0",
     "remark-lint": "5.0.0",
     "sass-lint": "1.9.0",
-    "stylelint": "7.1.0",
+    "stylelint": "7.2.0",
     "stylelint-config-standard": "13.0.0",
     "tern-lint": "0.6.0",
     "tslint": "3.15.1",
@@ -41,7 +41,7 @@
     "xo": "0.16.0"
   },
   "devDependencies": {
-    "glob": "7.0.5",
+    "glob": "7.0.6",
     "js-yaml": "3.6.1",
     "log-symbols": "1.0.2"
   }
