@@ -1,7 +1,6 @@
 linters:
   # JavaScript
   - eslint --ignore-path .gitignore .
-  - jscs .
   - jshint . --verbose
 
   # YAML
