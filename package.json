@@ -14,7 +14,7 @@
     "eslint": "3.5.0",
     "eslint-config-google": "0.6.0",
     "eslint-config-strict": "9.1.0",
-    "eslint-config-xo-react": "0.9.0",
+    "eslint-config-xo-react": "0.10.0",
     "eslint-plugin-angular": "1.4.0",
     "eslint-plugin-filenames": "1.1.0",
     "eslint-plugin-if-in-test": "0.2.0",
