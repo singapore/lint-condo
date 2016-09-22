@@ -22,7 +22,7 @@
     "eslint-plugin-node": "2.0.0",
     "eslint-plugin-promise": "2.0.1",
     "eslint-plugin-react": "6.3.0",
-    "eslint-plugin-xo": "0.5.1",
+    "eslint-plugin-xo": "1.0.0",
     "jshint": "2.9.3",
     "jslint": "0.10.3",
     "markdownlint-cli": "0.2.0",
