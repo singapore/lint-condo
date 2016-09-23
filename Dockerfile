@@ -1,9 +1,7 @@
 FROM alpine:3.3
 MAINTAINER Rhys Arkins <rhys@keylocation.sg>
 
-LABEL name="lint-condo"
-LABEL version="1.0"
-
+LABEL name="lint-condo" version="1.0"
 
 COPY provision.sh /
 COPY requirements.txt /
