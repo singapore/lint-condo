@@ -20,7 +20,7 @@
     "eslint-plugin-if-in-test": "0.2.0",
     "eslint-plugin-import": "1.16.0",
     "eslint-plugin-node": "2.0.0",
-    "eslint-plugin-promise": "2.0.1",
+    "eslint-plugin-promise": "3.0.0",
     "eslint-plugin-react": "6.3.0",
     "eslint-plugin-xo": "1.0.0",
     "jshint": "2.9.3",
