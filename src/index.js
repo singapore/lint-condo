@@ -1,13 +1,13 @@
 /* eslint-disable no-sync */
 
-var fs = require('fs');
-var chalk = require('chalk');
-var yaml = require('js-yaml');
-var logSymbols = require('log-symbols');
-var spawn = require('child_process').spawn;
-var pkg = require('/package.json');
+const fs = require('fs');
+const chalk = require('chalk');
+const yaml = require('js-yaml');
+const logSymbols = require('log-symbols');
+const spawn = require('child_process').spawn;
+const pkg = require('/package.json');
 
-var lintPackages = Object.keys(pkg.dependencies).concat(
+const lintPackages = Object.keys(pkg.dependencies).concat(
   'markdownlint', // npm markdownlint-cli
   'yamllint', // pip
   'proselint', // pip
@@ -15,7 +15,7 @@ var lintPackages = Object.keys(pkg.dependencies).concat(
 );
 
 /* eslint-disable no-console */
-var logger = {
+const logger = {
   error: function(msg) {
     console.error(chalk.bgRed(msg));
   },
@@ -27,11 +27,26 @@ var logger = {
   },
   fail: function(msg) {
     console.log(logSymbols.error, chalk.red(msg));
-  }
+  },
 };
 /* eslint-enable no-console */
 
-var configFile = null;
+function run(command) {
+  return new Promise(function(resolve) {
+    logger.info(`\nRunning "${command}"`);
+    const child = spawn('/bin/sh', ['-c', command], { stdio: 'inherit' });
+    child.on('error', function(err) {
+      logger.error(err);
+      resolve(255); // eslint-disable-line no-magic-numbers
+    });
+    child.on('exit', function(code) {
+      logger.info(`\nFinished "${command}" (code=${code})\n`);
+      resolve(code);
+    });
+  });
+}
+
+let configFile = null;
 try {
   configFile = fs.readFileSync('lint-condo.yaml', 'utf-8');
 } catch (err1) {
@@ -42,11 +57,11 @@ try {
     process.exit(1);
   }
 }
-var config = yaml.load(configFile);
+const config = yaml.load(configFile);
 
-var queue = Promise.resolve();
-var statuses = {};
-var exitCode = 0;
+let queue = Promise.resolve();
+const statuses = {};
+let exitCode = 0;
 
 config.linters.forEach(function(linter) {
   queue = queue.then(function() {
@@ -61,8 +76,8 @@ queue
   .then(function() {
     logger.info('\nSummary:');
     Object.keys(statuses).forEach(function(command) {
-      var printedCommand = command;
-      var firstWord = command.substr(0, command.indexOf(' '));
+      let printedCommand = command;
+      const firstWord = command.substr(0, command.indexOf(' '));
       if (lintPackages.indexOf(firstWord) !== -1) {
         printedCommand = firstWord;
       }
@@ -78,18 +93,3 @@ queue
     logger.error(err.stack);
     process.exit(1);
   });
-
-function run(command) {
-  return new Promise(function(resolve) {
-    logger.info(`\nRunning "${command}"`);
-    var child = spawn('/bin/sh', ['-c', command], {stdio: 'inherit'});
-    child.on('error', function(err) {
-      logger.error(err);
-      resolve(255); // eslint-disable-line no-magic-numbers
-    });
-    child.on('exit', function(code) {
-      logger.info(`\nFinished "${command}" (code=${code})\n`);
-      resolve(code);
-    });
-  });
-}
