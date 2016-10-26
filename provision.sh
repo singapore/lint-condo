@@ -10,7 +10,7 @@ apk update
 apk add --no-cache \
     git \
     go \
-    nodejs=4.3.0-r0 \
+    nodejs=6.7.0-r0 \
     python python-dev py-pip \
     ruby ruby-json
 
