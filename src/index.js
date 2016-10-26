@@ -14,21 +14,6 @@ const lintPackages = Object.keys(pkg.dependencies).concat(
   'scss-lint' // gem
 );
 
-function run(command) {
-  return new Promise(function(resolve) {
-    logger.info(`\nRunning "${command}"`);
-    const child = spawn('/bin/sh', ['-c', command], {stdio: 'inherit'});
-    child.on('error', function(err) {
-      logger.error(err);
-      resolve(255); // eslint-disable-line no-magic-numbers
-    });
-    child.on('exit', function(code) {
-      logger.info(`\nFinished "${command}" (code=${code})\n`);
-      resolve(code);
-    });
-  });
-}
-
 /* eslint-disable no-console */
 const logger = {
   error: function(msg) {
@@ -45,6 +30,21 @@ const logger = {
   },
 };
 /* eslint-enable no-console */
+
+function run(command) {
+  return new Promise(function(resolve) {
+    logger.info(`\nRunning "${command}"`);
+    const child = spawn('/bin/sh', ['-c', command], {stdio: 'inherit'});
+    child.on('error', function(err) {
+      logger.error(err);
+      resolve(255); // eslint-disable-line no-magic-numbers
+    });
+    child.on('exit', function(code) {
+      logger.info(`\nFinished "${command}" (code=${code})\n`);
+      resolve(code);
+    });
+  });
+}
 
 let configFile = null;
 try {
