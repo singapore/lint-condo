@@ -1,4 +1,4 @@
-FROM alpine:3.3
+FROM mhart/alpine-node:6
 MAINTAINER Rhys Arkins <rhys@keylocation.sg>
 
 LABEL name="lint-condo" version="1.0"
