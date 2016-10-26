@@ -34,7 +34,7 @@ const logger = {
 function run(command) {
   return new Promise(function(resolve) {
     logger.info(`\nRunning "${command}"`);
-    const child = spawn('/bin/sh', ['-c', command], {stdio: 'inherit'});
+    const child = spawn('/bin/sh', ['-c', command], { stdio: 'inherit' });
     child.on('error', function(err) {
       logger.error(err);
       resolve(255); // eslint-disable-line no-magic-numbers
