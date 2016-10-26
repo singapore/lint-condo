@@ -1,6 +1,6 @@
 /* eslint-disable no-sync */
 
-var fs = require('fs');
+const fs = require('fs');
 var chalk = require('chalk');
 var yaml = require('js-yaml');
 var logSymbols = require('log-symbols');
