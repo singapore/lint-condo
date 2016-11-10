@@ -30,7 +30,7 @@
     "remark": "6.0.0",
     "remark-cli": "2.0.0",
     "remark-lint": "5.0.0",
-    "sass-lint": "1.9.1",
+    "sass-lint": "1.10.2",
     "stylelint": "7.4.2",
     "stylelint-config-standard": "13.0.2",
     "tern-lint": "0.6.0",
