@@ -8,10 +8,14 @@ const spawn = require('child_process').spawn;
 const pkg = require('/package.json');
 
 const lintPackages = Object.keys(pkg.dependencies).concat(
-  'markdownlint', // npm markdownlint-cli
-  'yamllint', // pip
-  'proselint', // pip
-  'scss-lint' // gem
+  // npm markdownlint-cli
+  'markdownlint',
+  // pip
+  'yamllint',
+  // pip
+  'proselint',
+  // gem
+  'scss-lint'
 );
 
 /* eslint-disable no-console */

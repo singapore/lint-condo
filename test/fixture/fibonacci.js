@@ -1,6 +1,7 @@
 
 module.exports = function fibonacci(n) {
-  const fib = []; // Initialize array!
+  // Initialize array!
+  const fib = [];
 
   fib[0] = 0;
   fib[1] = 1;
