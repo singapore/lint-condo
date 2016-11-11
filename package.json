@@ -20,6 +20,7 @@
     "eslint-plugin-filenames": "1.1.0",
     "eslint-plugin-if-in-test": "0.2.0",
     "eslint-plugin-import": "2.2.0",
+    "eslint-plugin-jsx-a11y": "3.0.1",
     "eslint-plugin-node": "3.0.3",
     "eslint-plugin-promise": "3.3.1",
     "eslint-plugin-react": "6.6.0",
