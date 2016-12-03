@@ -38,7 +38,7 @@
     "tern-lint": "0.6.0",
     "tslint": "3.15.1",
     "typescript": "2.0.9",
-    "write-good": "0.9.1",
+    "write-good": "0.10.0",
     "xo": "0.17.0"
   },
   "devDependencies": {
