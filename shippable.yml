@@ -5,7 +5,7 @@ language: python
 python:
   - "3.3"
 
-install: pip install doit
+install: pip install --upgrade doit pathlib
 
 build:
   pre_ci_boot:
