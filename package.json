@@ -43,7 +43,7 @@
   },
   "devDependencies": {
     "glob": "7.1.1",
-    "js-yaml": "3.6.1",
+    "js-yaml": "3.7.0",
     "log-symbols": "1.0.2"
   }
 }
