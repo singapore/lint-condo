@@ -37,9 +37,8 @@
     "stylelint": "7.6.0",
     "tern-lint": "0.6.0",
     "tslint": "4.1.1",
-    "typescript": "2.0.9",
+    "typescript": "2.1.4",
     "write-good": "0.10.0",
-    "write-good": "0.9.1",
     "xo": "0.17.1"
   },
   "devDependencies": {
