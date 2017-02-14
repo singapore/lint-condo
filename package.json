@@ -29,6 +29,7 @@
     "jshint": "2.9.4",
     "jslint": "0.10.3",
     "markdownlint-cli": "0.2.0",
+    "proselint": "0.1.7",    
     "pug-lint": "2.3.0",
     "remark": "6.2.0",
     "remark-cli": "2.1.0",
