@@ -12,7 +12,7 @@ Linting can be contagious once you start, so with this all-in-one image you can 
 
 ## How it Works
 
-You will need to run the image while pointing it to your source code and providing a `lint-condo.yml` or `.lint-condo.yml` file to tell it which lint commands to run. You can see an example of this file in this repository [here](https://github.com/singapore/lint-condo/blob/master/.lint-condo.yaml). As you'll probably observe, it's a list of shell commands.
+You will need to run the image while pointing it to your source code and providing a `lint-condo.yaml` or `.lint-condo.yaml` file to tell it which lint commands to run. You can see an example of this file in this repository [here](https://github.com/singapore/lint-condo/blob/master/.lint-condo.yaml). As you'll probably observe, it's a list of shell commands.
 
 You can then run it like this:
 
@@ -22,7 +22,7 @@ docker run -v `pwd`:/src/ singapore/lint-condo
 
 ## Continuous Integration
 
-Perhaps the best way to run linting is part of Continuous Integration. If you already use such a service, running `lint-condo` should be as simple as adding the `lint-condo.yml` file and adding an extra `test` line to your CI script. It's recommended to put linting first as that is often the common cause of test failures once you add it. If you don't already use such a service, the easiest to set up for linting is [CircleCI](https://circleci.com/) and you can use this example `circle.yml`:
+Perhaps the best way to run linting is part of Continuous Integration. If you already use such a service, running `lint-condo` should be as simple as adding the `lint-condo.yaml` file and adding an extra `test` line to your CI script. It's recommended to put linting first as that is often the common cause of test failures once you add it. If you don't already use such a service, the easiest to set up for linting is [CircleCI](https://circleci.com/) and you can use this example `circle.yml`:
 
 ```yaml
 machine:
