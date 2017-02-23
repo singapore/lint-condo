@@ -31,7 +31,7 @@
     "markdownlint-cli": "0.2.0",
     "proselint": "0.1.7",    
     "pug-lint": "2.4.0",
-    "remark": "6.2.0",
+    "remark": "7.0.0",
     "remark-cli": "2.1.0",
     "remark-lint": "5.4.0",
     "sass-lint": "1.10.2",
