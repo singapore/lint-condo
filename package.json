@@ -10,7 +10,7 @@
     "csslint": "1.0.5",
     "dependency-lint": "4.3.1",
     "dockerfile_lint": "0.2.4",
-    "doiuse": "2.5.0",
+    "doiuse": "2.6.0",
     "eslint": "3.15.0",
     "eslint-config-airbnb": "14.1.0",
     "eslint-plugin-compat": "1.0.1",
