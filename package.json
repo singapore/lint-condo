@@ -24,7 +24,7 @@
     "eslint-plugin-jsx-a11y": "4.0.0",
     "eslint-plugin-node": "4.0.1",
     "eslint-plugin-promise": "3.4.1",
-    "eslint-plugin-react": "6.10.0",
+    "eslint-plugin-react": "6.10.1",
     "eslint-plugin-xo": "1.0.0",
     "jshint": "2.9.4",
     "jslint": "0.10.3",
