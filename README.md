@@ -46,12 +46,12 @@ For our own project linting, we use the `latest` version of the image (so we can
 
 ## Included Linters
 
-- scss_lint
-- gometalinter
-- proselint
-- yamllint
-- bootlint
-- coffeelint
+- [scss_lint](https://github.com/brigade/scss-lint)
+- [gometalinter](https://github.com/alecthomas/gometalinter)
+- [proselint](https://github.com/amperser/proselint)
+- [yamllint](https://github.com/adrienverge/yamllint)
+- [bootlint](https://github.com/twbs/bootlint)
+- [coffeelint](https://github.com/clutchski/coffeelint)
 - csslint
 - dependency-lint
 - dockerfile_lint
