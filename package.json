@@ -8,7 +8,7 @@
     "chalk": "1.1.3",
     "coffeelint": "1.16.0",
     "csslint": "1.0.5",
-    "dependency-lint": "4.3.2",
+    "dependency-lint": "5.0.1",
     "dockerfile_lint": "0.2.7",
     "doiuse": "2.6.0",
     "eslint": "3.19.0",
