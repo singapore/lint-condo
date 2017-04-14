@@ -18,7 +18,7 @@
     "eslint-config-strict": "12.0.0",
     "eslint-config-xo-react": "0.11.1",
     "eslint-plugin-angular": "2.2.1",
-    "eslint-plugin-filenames": "1.1.0",
+    "eslint-plugin-filenames": "1.2.0",
     "eslint-plugin-if-in-test": "0.2.0",
     "eslint-plugin-import": "2.2.0",
     "eslint-plugin-jsx-a11y": "4.0.0",
