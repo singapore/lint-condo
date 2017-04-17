@@ -37,7 +37,7 @@
     "stylelint-config-standard": "16.0.0",
     "stylelint": "7.10.1",
     "tern-lint": "0.6.0",
-    "tslint": "5.0.0",
+    "tslint": "5.1.0",
     "typescript": "2.2.2",
     "write-good": "0.10.3",
     "xo": "0.18.1"
