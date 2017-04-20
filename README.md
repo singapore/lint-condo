@@ -57,7 +57,6 @@ For our own project linting, we use the `latest` version of the image (so we can
 - [dockerfile_lint](https://github.com/projectatomic/dockerfile_lint)
 - [doiuse](https://github.com/anandthakker/doiuse)
 - [eslint](https://github.com/eslint/eslint) + plugins
-- [jscs](https://github.com/jscs-dev/node-jscs)
 - jshint
 - jslint
 - markdownlint
