@@ -52,12 +52,11 @@ For our own project linting, we use the `latest` version of the image (so we can
 - [yamllint](https://github.com/adrienverge/yamllint)
 - [bootlint](https://github.com/twbs/bootlint)
 - [coffeelint](https://github.com/clutchski/coffeelint)
-- csslint
-- dependency-lint
-- dockerfile_lint
-- doiuse
-- eslint + plugins
-- jscs
+- [csslint](https://github.com/CSSLint/csslint)
+- [dependency-lint](https://github.com/charlierudolph/dependency-lint)
+- [dockerfile_lint](https://github.com/projectatomic/dockerfile_lint)
+- [doiuse](https://github.com/anandthakker/doiuse)
+- [eslint](https://github.com/eslint/eslint) + plugins
 - jshint
 - jslint
 - markdownlint
