@@ -48,8 +48,7 @@
     "log-symbols": "1.0.2"
   },
   "renovate": {
-    "separateMajorReleases": false,
-    "prCreation": "not-pending",
+    "automerge": "any",
     "packages": [
       {
     	"packagePattern": "^eslint",
