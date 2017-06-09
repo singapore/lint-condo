@@ -36,7 +36,7 @@
     "sass-lint": "1.10.2",
     "stylelint-config-standard": "16.0.0",
     "stylelint-scss": "1.4.4",
-    "stylelint": "7.10.1",
+    "stylelint": "7.11.0",
     "tern-lint": "0.6.0",
     "tslint": "5.4.3",
     "typescript": "2.3.4",
