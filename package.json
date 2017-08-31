@@ -39,7 +39,7 @@
     "stylelint": "8.0.0",
     "tern-lint": "0.6.0",
     "tslint": "5.7.0",
-    "typescript": "2.4.2",
+    "typescript": "2.5.2",
     "write-good": "0.11.3",
     "xo": "0.18.2"
   },
