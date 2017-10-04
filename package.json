@@ -6,7 +6,7 @@
   "dependencies": {
     "bootlint": "0.14.2",
     "chalk": "2.1.0",
-    "coffeelint": "2.0.3",
+    "coffeelint": "2.0.5",
     "csslint": "1.0.5",
     "dependency-lint": "5.0.1",
     "dockerfile_lint": "0.2.7",
