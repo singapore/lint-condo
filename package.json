@@ -47,22 +47,5 @@
     "glob": "7.1.2",
     "js-yaml": "3.10.0",
     "log-symbols": "2.1.0"
-  },
-  "renovate": {
-    "automerge": "any",
-    "packages": [
-      {
-    	"packagePattern": "^eslint",
-    	"groupName": "eslint"
-      },
-      {
-    	"packagePattern": "^stylelint",
-    	"groupName": "stylelint"
-      },
-      {
-    	"packagePattern": "^remark",
-    	"groupName": "remark"
-      }
-    ]
   }
 }
