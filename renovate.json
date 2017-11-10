@@ -1,0 +1,25 @@
+{
+  "automerge": "any",
+  "docker": {
+    "major": {
+      "enabled": true
+    },
+    "minor": {
+      "enabled": true
+    }
+  },
+  "packages": [
+    {
+      "packagePattern": "^eslint",
+      "groupName": "eslint"
+    },
+    {
+      "packagePattern": "^stylelint",
+      "groupName": "stylelint"
+    },
+    {
+      "packagePattern": "^remark",
+      "groupName": "remark"
+    }
+  ]
+}
