@@ -6,6 +6,7 @@ machine:
 
 dependencies:
   override:
+    - pip3 install --upgrade pip
     - pip3 install doit
     - doit build
 
