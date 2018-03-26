@@ -1,14 +1,6 @@
 {
   "extends": ["config:base"],
-  "automerge": "any",
-  "docker": {
-    "major": {
-      "enabled": true
-    },
-    "minor": {
-      "enabled": true
-    }
-  },
+  "automerge": true,
   "packages": [
     {
       "packagePattern": "^eslint",
