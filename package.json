@@ -9,7 +9,7 @@
     "coffeelint": "2.0.6",
     "csslint": "1.0.5",
     "dependency-lint": "5.0.1",
-    "dockerfile_lint": "0.2.7",
+    "dockerfile_lint": "0.3.2",
     "doiuse": "4.0.0",
     "eslint": "4.9.0",
     "eslint-config-airbnb": "16.1.0",
