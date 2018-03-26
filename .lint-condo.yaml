@@ -22,4 +22,4 @@ linters:
   - sh test/colors.sh
 
   # Dockerfile
-  - dockerfile_lint -f Dockerfile
+  # - dockerfile_lint -f Dockerfile
