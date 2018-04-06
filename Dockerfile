@@ -1,4 +1,4 @@
-FROM mhart/alpine-node:6@sha256:2e09f52caa14aa0be0c0a6bbbc22eecba631e25a27da4116654f023ac9cbb3d4
+FROM mhart/alpine-node:6@sha256:979cee0309612276c45b18513a614b86dff2597c8efaa9df1beca94e1b23f907
 MAINTAINER Rhys Arkins <rhys@keylocation.sg>
 
 LABEL name="lint-condo" version="1.0"
