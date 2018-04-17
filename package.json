@@ -20,7 +20,7 @@
     "eslint-plugin-angular": "3.3.0",
     "eslint-plugin-filenames": "1.2.0",
     "eslint-plugin-if-in-test": "0.2.0",
-    "eslint-plugin-import": "2.10.0",
+    "eslint-plugin-import": "2.11.0",
     "eslint-plugin-jsx-a11y": "6.0.3",
     "eslint-plugin-node": "6.0.1",
     "eslint-plugin-promise": "3.7.0",
