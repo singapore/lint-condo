@@ -32,7 +32,7 @@
     "proselint": "0.1.7",    
     "pug-lint": "2.5.0",
     "remark-cli": "5.0.0",
-    "remark-lint": "6.0.1",
+    "remark-lint": "6.0.2",
     "sass-lint": "1.12.1",
     "stylelint-config-standard": "18.2.0",
     "stylelint-scss": "3.1.0",
