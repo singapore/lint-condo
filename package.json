@@ -11,7 +11,7 @@
     "dependency-lint": "5.0.1",
     "dockerfile_lint": "0.3.2",
     "doiuse": "4.1.0",
-    "eslint": "4.19.1",
+    "eslint": "5.0.0",
     "eslint-config-airbnb": "17.0.0",
     "eslint-plugin-compat": "2.4.0",
     "eslint-config-google": "0.9.1",
