@@ -13,7 +13,7 @@
     "doiuse": "4.1.0",
     "eslint": "5.1.0",
     "eslint-config-airbnb": "17.0.0",
-    "eslint-plugin-compat": "2.5.0",
+    "eslint-plugin-compat": "2.5.1",
     "eslint-config-google": "0.9.1",
     "eslint-config-strict": "14.0.1",
     "eslint-config-xo-react": "0.17.0",
