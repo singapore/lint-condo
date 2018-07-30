@@ -26,7 +26,7 @@
     "eslint-plugin-promise": "3.8.0",
     "eslint-plugin-react": "7.10.0",
     "eslint-plugin-xo": "1.0.0",
-    "jshint": "2.9.5",
+    "jshint": "2.9.6",
     "jslint": "0.12.0",
     "markdownlint-cli": "0.12.0",
     "proselint": "0.1.7",    
