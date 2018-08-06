@@ -41,7 +41,7 @@
     "tslint": "5.11.0",
     "typescript": "3.0.1",
     "write-good": "0.13.0",
-    "xo": "0.21.1"
+    "xo": "0.22.0"
   },
   "devDependencies": {
     "glob": "7.1.2",
