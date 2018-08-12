@@ -35,7 +35,7 @@
     "remark-lint": "6.0.2",
     "sass-lint": "1.12.1",
     "stylelint-config-standard": "18.2.0",
-    "stylelint-scss": "3.2.0",
+    "stylelint-scss": "3.3.0",
     "stylelint": "9.4.0",
     "tern-lint": "0.6.0",
     "tslint": "5.11.0",
