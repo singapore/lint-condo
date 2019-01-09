@@ -59,13 +59,13 @@ For our own project linting, we use the `latest` version of the image (so we can
 - [eslint](https://github.com/eslint/eslint) + plugins
 - jshint
 - jslint
-- markdownlint
-- pug-lint
-- remark-lint
-- sass-lint
-- stylelint
-- tern-lint
-- write-good
+- [markdownlint](https://github.com/markdownlint/markdownlint)
+- [pug-lint](https://github.com/pugjs/pug-lint)
+- [remark-lint](https://github.com/remarkjs/remark-lint)
+- [sass-lint](https://github.com/sasstools/sass-lint)
+- [stylelint](https://stylelint.io/)
+- [tern-lint](https://github.com/angelozerr/tern-lint)
+- [write-good](https://github.com/btford/write-good)
 - xo
 
 ## Example Output
