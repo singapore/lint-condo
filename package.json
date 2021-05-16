@@ -27,7 +27,7 @@
     "eslint-plugin-react": "7.11.1",
     "eslint-plugin-xo": "1.0.0",
     "jshint": "2.9.6",
-    "jslint": "0.12.0",
+    "jslint": "0.12.1",
     "markdownlint-cli": "0.13.0",
     "proselint": "0.1.7",    
     "pug-lint": "2.5.0",
