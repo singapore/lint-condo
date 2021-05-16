@@ -5,7 +5,7 @@
   "repository": "https://github.com/singapore/lint-condo",
   "dependencies": {
     "bootlint": "0.15.1",
-    "chalk": "2.4.1",
+    "chalk": "2.4.2",
     "coffeelint": "2.1.0",
     "csslint": "1.0.5",
     "dependency-lint": "5.0.1",
