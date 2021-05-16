@@ -28,7 +28,7 @@
     "eslint-plugin-xo": "1.0.0",
     "jshint": "2.12.0",
     "jslint": "0.12.1",
-    "markdownlint-cli": "0.13.0",
+    "markdownlint-cli": "0.27.1",
     "proselint": "0.1.7",    
     "pug-lint": "2.5.0",
     "remark-cli": "5.0.0",
