@@ -4,7 +4,7 @@
   "description": "Lint Container for Docker",
   "repository": "https://github.com/singapore/lint-condo",
   "dependencies": {
-    "bootlint": "0.15.1",
+    "bootlint": "0.16.8",
     "chalk": "2.4.2",
     "coffeelint": "2.1.0",
     "csslint": "1.0.5",
