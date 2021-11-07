@@ -1,3 +1,3 @@
 yamllint==1.12.0
-proselint==0.10.2
+proselint==0.13.0
 gixy==0.1.20
